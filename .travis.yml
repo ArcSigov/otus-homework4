@@ -3,6 +3,8 @@ language: cpp
 compiler: clang
 before_script:
 - sudo apt-get update
+- sudo apt install gcc-7 -y
+- sudo apt install g++-7 -y
 - sudo apt install libboost-test-dev -y
 script:
 - cmake .
