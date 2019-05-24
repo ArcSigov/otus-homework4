@@ -6,6 +6,7 @@ before_script:
 - sudo apt-get update -q
 - sudo apt-get install gcc-7 -y
 - sudo apt-get install g++-7 -y
+- sudo apt-get install doxygen -y
 - sudo apt install libboost-test-dev -y
 script:
 - cmake .
