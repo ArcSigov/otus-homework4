@@ -12,10 +12,12 @@ script:
 - cmake --build .
 - cmake --build . --target test
 - cmake --build . --target package
+- doxygen Doxyfile
 deploy:
 
   provider: pages
   skip_cleanup: true
+  local_dir: docs/html
   github_token: $GITHUB_TOKEN  
   keep_history: true
   on:
