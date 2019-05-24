@@ -2,10 +2,7 @@ dist: xenial
 language: cpp
 compiler: clang
 before_script:
-- sudo apt-get update
-- sudo add-apt-repository ppa:jonathonf/gcc-7.1
-- sudo apt install gcc-7 -y
-- sudo apt install g++-7 -y
+- sudo apt-get update -qq
 - sudo apt install libboost-test-dev -y
 script:
 - cmake .
