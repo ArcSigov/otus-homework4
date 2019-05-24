@@ -2,7 +2,9 @@ dist: xenial
 language: cpp
 compiler: clang
 before_script:
-- sudo apt-get update -qq
+- sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+- sudo apt-get update -q
+- sudo apt-get install gcc-7 -y
 - sudo apt install libboost-test-dev -y
 script:
 - cmake .
