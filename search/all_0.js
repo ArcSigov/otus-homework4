@@ -7,6 +7,5 @@ var searchData=
   ['_5fshort',['_short',['../print__ip_8cpp.html#ac57857a107fc58376edcb9c2b229b2f6',1,'print_ip.cpp']]],
   ['_5fstring',['_string',['../print__ip_8cpp.html#a7d4d8ad0bbd0af8f510c05812ee5cb36',1,'print_ip.cpp']]],
   ['_5ftuple',['_tuple',['../print__ip_8cpp.html#ae9ae314de04458b92af76712b52f71c8',1,'print_ip.cpp']]],
-  ['_5ftuple_5fbad',['_tuple_bad',['../print__ip_8cpp.html#a2cfe8d4a44ccf594b3427392b18a774a',1,'print_ip.cpp']]],
   ['_5fvector',['_vector',['../print__ip_8cpp.html#a84a7c734235ca6fee4fbcda505061957',1,'print_ip.cpp']]]
 ];
