@@ -1,6 +1,7 @@
 dist: xenial
 language: cpp
 compiler: clang
+sudo: true
 before_script:
 - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
 - sudo apt-get update -q
@@ -10,13 +11,11 @@ before_script:
 - sudo apt-get install graphviz -y
 - sudo apt install libboost-test-dev -y
 script:
-- doxygen Doxyfile
-- cd ..
 - cmake .
 - cmake --build .
 - cmake --build . --target test
 - cmake --build . --target package
-
+- doxygen Doxyfile
 deploy:
   
 - provider: script
