@@ -1,0 +1,1 @@
+/usr/local/clang-7.0.0/bin/clang++    -rdynamic CMakeFiles/test_print_ip.dir/test_version.cpp.o  -o test_print_ip -lboost_unit_test_framework 

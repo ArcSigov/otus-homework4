@@ -1,0 +1,95 @@
+\hypertarget{print__ip_8h}{}\section{print\+\_\+ip.\+h File Reference}
+\label{print__ip_8h}\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$tuple$>$}\\*
+{\ttfamily \#include $<$type\+\_\+traits$>$}\\*
+Include dependency graph for print\+\_\+ip.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{print__ip_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{print__ip_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcontainer}{container$<$ typename $>$}
+\item 
+struct \hyperlink{structcontainer_3_01std_1_1vector_3_01T_00_01Args_8_8_8_01_4_01_4}{container$<$ std\+::vector$<$ T, Args... $>$ $>$}
+\item 
+struct \hyperlink{structcontainer_3_01std_1_1list_3_01T_00_01Args_8_8_8_01_4_01_4}{container$<$ std\+::list$<$ T, Args... $>$ $>$}
+\item 
+struct \hyperlink{structis__valid}{is\+\_\+valid$<$ T, tuple\+\_\+args $>$}
+\item 
+struct \hyperlink{structis__valid_3_01T_00_01U_00_01tuple__args_8_8_8_01_4}{is\+\_\+valid$<$ T, U, tuple\+\_\+args... $>$}
+\item 
+struct \hyperlink{structis__valid_3_01T_00_01T_00_01tuple__args_8_8_8_01_4}{is\+\_\+valid$<$ T, T, tuple\+\_\+args... $>$}
+\item 
+struct \hyperlink{structis__valid_3_01T_00_01U_01_4}{is\+\_\+valid$<$ T, U $>$}
+\item 
+struct \hyperlink{structis__valid_3_01T_00_01T_01_4}{is\+\_\+valid$<$ T, T $>$}
+\item 
+struct \hyperlink{structis__valid_3_01T_01_4}{is\+\_\+valid$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em thank\textquotesingle{}s cxx17 standard \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{print__ip_8h_ab85a39e729dc1b3396a77a5da5345dcd}{ip\+\_\+printer} (const std\+::string \&str)
+\item 
+{\footnotesize template$<$typename \+\_\+\+\_\+container $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{structcontainer}{container}$<$ \+\_\+\+\_\+container $>$\+::value, void $>$ \hyperlink{print__ip_8h_a229cf5a6abbb8313fa417226fb072cba}{ip\+\_\+printer} (const \+\_\+\+\_\+container \&t)
+\item 
+{\footnotesize template$<$typename \+\_\+var\+\_\+arg $>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+integral\+\_\+v$<$ \+\_\+var\+\_\+arg $>$, void $>$ \hyperlink{print__ip_8h_a4fbfe43708e3a02818258687cb35da02}{ip\+\_\+printer} (const \+\_\+var\+\_\+arg t)
+\item 
+{\footnotesize template$<$typename... ts$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{structis__valid}{is\+\_\+valid}$<$ ts... $>$\+::value, void $>$ \hyperlink{print__ip_8h_a6a08563005b5786b16d6281301500f20}{ip\+\_\+printer} (const std\+::tuple$<$ ts... $>$ \&\hyperlink{print__ip_8cpp_ae9ae314de04458b92af76712b52f71c8}{\+\_\+tuple})
+\item 
+{\footnotesize template$<$typename... ts$>$ }\\std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{structis__valid}{is\+\_\+valid}$<$ ts... $>$\+::value==false, void $>$ \hyperlink{print__ip_8h_afaab24dcc9f9e553b7ff61800dc0ccfb}{ip\+\_\+printer} (const std\+::tuple$<$ ts... $>$ \&\hyperlink{print__ip_8cpp_ae9ae314de04458b92af76712b52f71c8}{\+\_\+tuple})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!ip\+\_\+printer@{ip\+\_\+printer}}
+\index{ip\+\_\+printer@{ip\+\_\+printer}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
+\subsubsection[{\texorpdfstring{ip\+\_\+printer(const std\+::string \&str)}{ip_printer(const std::string &str)}}]{\setlength{\rightskip}{0pt plus 5cm}void ip\+\_\+printer (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{print__ip_8h_ab85a39e729dc1b3396a77a5da5345dcd}{}\label{print__ip_8h_ab85a39e729dc1b3396a77a5da5345dcd}
+\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!ip\+\_\+printer@{ip\+\_\+printer}}
+\index{ip\+\_\+printer@{ip\+\_\+printer}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
+\subsubsection[{\texorpdfstring{ip\+\_\+printer(const \+\_\+\+\_\+container \&t)}{ip_printer(const __container &t)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+\_\+container $>$ std\+::enable\+\_\+if\+\_\+t$<${\bf container}$<$\+\_\+\+\_\+container$>$\+::value,void$>$ ip\+\_\+printer (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+container \&}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{print__ip_8h_a229cf5a6abbb8313fa417226fb072cba}{}\label{print__ip_8h_a229cf5a6abbb8313fa417226fb072cba}
+\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!ip\+\_\+printer@{ip\+\_\+printer}}
+\index{ip\+\_\+printer@{ip\+\_\+printer}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
+\subsubsection[{\texorpdfstring{ip\+\_\+printer(const \+\_\+var\+\_\+arg t)}{ip_printer(const _var_arg t)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+var\+\_\+arg $>$ std\+::enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+integral\+\_\+v$<$\+\_\+var\+\_\+arg$>$,void$>$ ip\+\_\+printer (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+var\+\_\+arg}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{print__ip_8h_a4fbfe43708e3a02818258687cb35da02}{}\label{print__ip_8h_a4fbfe43708e3a02818258687cb35da02}
+\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!ip\+\_\+printer@{ip\+\_\+printer}}
+\index{ip\+\_\+printer@{ip\+\_\+printer}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
+\subsubsection[{\texorpdfstring{ip\+\_\+printer(const std\+::tuple$<$ ts... $>$ \&\+\_\+tuple)}{ip_printer(const std::tuple< ts... > &_tuple)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... ts$>$ std\+::enable\+\_\+if\+\_\+t$<${\bf is\+\_\+valid}$<$ts...$>$\+::value,void$>$ ip\+\_\+printer (
+\begin{DoxyParamCaption}
+\item[{const std\+::tuple$<$ ts... $>$ \&}]{\+\_\+tuple}
+\end{DoxyParamCaption}
+)}\hypertarget{print__ip_8h_a6a08563005b5786b16d6281301500f20}{}\label{print__ip_8h_a6a08563005b5786b16d6281301500f20}
+\index{print\+\_\+ip.\+h@{print\+\_\+ip.\+h}!ip\+\_\+printer@{ip\+\_\+printer}}
+\index{ip\+\_\+printer@{ip\+\_\+printer}!print\+\_\+ip.\+h@{print\+\_\+ip.\+h}}
+\subsubsection[{\texorpdfstring{ip\+\_\+printer(const std\+::tuple$<$ ts... $>$ \&\+\_\+tuple)}{ip_printer(const std::tuple< ts... > &_tuple)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... ts$>$ std\+::enable\+\_\+if\+\_\+t$<${\bf is\+\_\+valid}$<$ts...$>$\+::value == false,void$>$ ip\+\_\+printer (
+\begin{DoxyParamCaption}
+\item[{const std\+::tuple$<$ ts... $>$ \&}]{\+\_\+tuple}
+\end{DoxyParamCaption}
+)}\hypertarget{print__ip_8h_afaab24dcc9f9e553b7ff61800dc0ccfb}{}\label{print__ip_8h_afaab24dcc9f9e553b7ff61800dc0ccfb}

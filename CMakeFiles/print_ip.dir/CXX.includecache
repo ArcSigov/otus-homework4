@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/travis/build/ArcSigov/otus-homework4/print_ip.cpp
+iostream
+-
+vector
+-
+list
+-
+tuple
+-
+print_ip.h
+/home/travis/build/ArcSigov/otus-homework4/print_ip.h
+
+/home/travis/build/ArcSigov/otus-homework4/print_ip.h
+iostream
+-
+vector
+-
+list
+-
+tuple
+-
+type_traits
+-
+
