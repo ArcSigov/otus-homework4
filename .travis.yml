@@ -10,11 +10,11 @@ before_script:
 - sudo apt-get install graphviz -y
 - sudo apt install libboost-test-dev -y
 script:
+- doxygen Doxyfile
 - cmake .
 - cmake --build .
 - cmake --build . --target test
 - cmake --build . --target package
-- doxygen Doxyfile
 deploy:
   
 - provider: script
