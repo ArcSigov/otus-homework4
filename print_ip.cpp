@@ -14,8 +14,9 @@ const long long _long = 8875824491850138409;
 const unsigned short _short = 0;
 const char _char = -1;
 auto _tuple = std::make_tuple("121","125","255","254");
+#ifdef DEBUG
 auto _tuple_bad = std::make_tuple("1",'1',2, 4. );
-
+#endif
 
 
 
@@ -29,6 +30,8 @@ int main()
   ip_printer(_vector);
   ip_printer(_list);
   ip_printer(_tuple);
-  //ip_printer(_tuple_bad);
+#ifdef DEBUG
+  ip_printer(_tuple_bad);
+#endif
   return 0;
 }
