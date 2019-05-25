@@ -9,8 +9,10 @@ before_script:
 - sudo apt-get install doxygen -y
 - sudo apt-get install graphviz -y
 - sudo apt install libboost-test-dev -y
+- mkdir docs
+- cd docs
 script:
-- doxygen docs/Doxyfile
+- doxygen ../Doxyfile
 - cmake .
 - cmake --build .
 - cmake --build . --target test
