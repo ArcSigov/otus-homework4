@@ -1,10 +1,10 @@
-Start testing: May 25 12:18 UTC
+Start testing: May 25 12:22 UTC
 ----------------------------------------------------------
 1/1 Testing: print_ip_test_version
 1/1 Test: print_ip_test_version
 Command: "/home/travis/build/ArcSigov/otus-homework4/test_print_ip"
 Directory: /home/travis/build/ArcSigov/otus-homework4
-"print_ip_test_version" start time: May 25 12:18 UTC
+"print_ip_test_version" start time: May 25 12:22 UTC
 Output:
 ----------------------------------------------------------
 Running 1 test case...
@@ -14,8 +14,8 @@ Running 1 test case...
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"print_ip_test_version" end time: May 25 12:18 UTC
+"print_ip_test_version" end time: May 25 12:22 UTC
 "print_ip_test_version" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 25 12:18 UTC
+End testing: May 25 12:22 UTC

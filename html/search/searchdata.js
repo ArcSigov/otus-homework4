@@ -5,7 +5,7 @@ var indexSectionsWithContent =
   2: "prtv",
   3: "bimv",
   4: "_",
-  5: "bp",
+  5: "b",
   6: "o"
 };
 
