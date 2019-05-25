@@ -17,12 +17,12 @@ script:
 - doxygen Doxyfile
 deploy:
   
-  provider: script
+- provider: script
   skip_cleanup: true
   script:
   - curl -T print_ip-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uarcsigov:$BINTRAY_API_KEY "https://api.bintray.com/content/arcsigov/otus-homework/homework/$TRAVIS_BUILD_NUMBER/print_ip-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=i386,amd64;publish=1"
   
-  provider: pages
+- provider: pages
   skip_cleanup: true
   local_dir: docs/html
   github_token: $GITHUB_TOKEN  
