@@ -89,6 +89,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="title">Файл print_ip.h</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Заголовочный файл с описанием функции печати ip адреса в зависимости от его представления  
+<a href="#details">Подробнее...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;list&gt;</code><br />
@@ -131,7 +134,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__valid_3_01T_00_01T_01_4.html">is_valid&lt; T, T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__valid_3_01T_01_4.html">is_valid&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">thank's cxx17 standard  <a href="structis__valid_3_01T_01_4.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -148,7 +150,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <tr class="memitem:a6a08563005b5786b16d6281301500f20"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structis__valid.html">is_valid</a>&lt; ts... &gt;::value, void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8h.html#a6a08563005b5786b16d6281301500f20">ip_printer</a> (const std::tuple&lt; ts... &gt; &amp;<a class="el" href="print__ip_8cpp.html#ae9ae314de04458b92af76712b52f71c8">_tuple</a>)</td></tr>
 <tr class="separator:a6a08563005b5786b16d6281301500f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Функции</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Заголовочный файл с описанием функции печати ip адреса в зависимости от его представления </p>
+<dl class="section author"><dt>Авторы</dt><dd>Аркадий Сигов</dd></dl>
+<p>Данный файл содержит в себе определения основных функций, используемых в программе </p>
+</div><h2 class="groupheader">Функции</h2>
 <a class="anchor" id="ab85a39e729dc1b3396a77a5da5345dcd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -162,6 +168,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Печатает ip-адрес, если данный представлен в виде std::string </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">&amp;src</td><td>Ссылка на строку </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -180,6 +192,12 @@ template&lt;typename __container &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Печатает ip-адрес, если данный представлен в виде контейнера std::vector&lt;type&gt; или std::list&lt;type&gt; </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">__container&amp;</td><td>Ссылка на контейнер </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -198,6 +216,12 @@ template&lt;typename _var_arg &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Печатает ip-адрес, если данный представлен в виде целого числа </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>целочисленная переменная </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -216,6 +240,12 @@ template&lt;typename... ts&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Печатает ip-адрес, если данный представлен в виде однородного кортежа std::tuple&lt;T,T,T,...&gt; </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">&amp;_tuple</td><td>ссылка на однородный кортеж </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
