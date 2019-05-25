@@ -85,12 +85,13 @@ ip_printer(const std::tuple<ts ...> &_tuple)
 	}
 }
 
+#ifdef DEBUG
 template<typename ...ts>
 typename std::enable_if_t<is_valid<ts...>::value == false,void>
 ip_printer(const std::tuple<ts ...> &_tuple)
 {
     std::cout << "tuple types not same" << std::endl;
 }
-
+#endif
 
 
