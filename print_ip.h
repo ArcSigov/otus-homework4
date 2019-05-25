@@ -1,3 +1,11 @@
+/*!
+\file print_ip.h
+\brief Заголовочный файл с описанием функции печати ip адреса в зависимости от его представления
+\authors Аркадий Сигов
+
+Данный файл содержит в себе определения основных 
+функций, используемых в программе
+*/
 #pragma once
 
 
@@ -7,7 +15,10 @@
 #include <tuple>
 #include <type_traits>
 
-
+/*!
+Печатает ip-адрес, если данный представлен в виде std::string
+\param[in] &src Ссылка на строку
+*/
 void ip_printer(const std::string &str)
 {
     std::cout << str << std::endl;
@@ -22,6 +33,10 @@ struct container<std::vector<T,Args...>>:std::true_type{};
 template<typename T, typename ... Args>
 struct container<std::list<T,Args...>>:std::true_type{};
 
+/*!
+Печатает ip-адрес, если данный представлен в виде контейнера std::vector<type> или std::list<type>
+\param[in] __container& Ссылка на контейнер
+*/
 template<typename __container>
 typename std::enable_if_t<container<__container>::value,void>
 ip_printer(const __container& t)
@@ -37,6 +52,10 @@ ip_printer(const __container& t)
     std::cout << std::endl;
 }
 
+/*!
+Печатает ip-адрес, если данный представлен в виде целого числа
+\param[in] t целочисленная переменная
+*/
 template<typename _var_arg>
 typename std::enable_if_t<std::is_integral_v<_var_arg>,void>
 ip_printer(const _var_arg t)
@@ -70,7 +89,10 @@ struct is_valid<T,T>:std::true_type{};
 template<typename T>
 struct is_valid<T>:std::true_type{};
 
-//!< thank's cxx17 standard
+/*!
+Печатает ip-адрес, если данный представлен в виде однородного кортежа std::tuple<T,T,T,...>
+\param[in] &_tuple ссылка на однородный кортеж
+*/
 template<typename ...ts>
 typename std::enable_if_t<is_valid<ts...>::value,void>
 ip_printer(const std::tuple<ts ...> &_tuple)
