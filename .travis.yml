@@ -13,13 +13,11 @@ before_script:
 - cd docs
 script:
 - doxygen ../Doxyfile
+- cd ..
 - cmake .
 - cmake --build .
 - cmake --build . --target test
 - cmake --build . --target package
-
-before_deploy:
-- cd $TRAVIS_BUILD_DIR
 
 deploy:
   
