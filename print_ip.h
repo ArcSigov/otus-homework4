@@ -69,6 +69,7 @@ ip_printer(const _var_arg t)
 			if (i>0)
 				std::cout << ".";
 		}
+		std::cout << std::endl;
 	}
 }
 
