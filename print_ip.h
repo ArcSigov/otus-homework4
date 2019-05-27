@@ -60,14 +60,16 @@ template<typename _var_arg>
 typename std::enable_if_t<std::is_integral_v<_var_arg>,void>
 ip_printer(const _var_arg t)
 {
-
-    for (auto i = sizeof(_var_arg);i--;)
-    {
-            std::cout << ((t >> (i<<3)&0xFF));
-            if (i>0)
-                std::cout << ".";
-    }
-     std::cout<< std::endl;
+	unsigned char *byte = (unsigned char*)&t;
+	if (nullptr != byte)
+	{
+		for (int i = sizeof(t); i--;)
+		{
+			std::cout << std::to_string(byte[i]);
+			if (i>0)
+				cout << ".";
+		}
+	}
 }
 
 
