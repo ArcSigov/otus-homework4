@@ -67,7 +67,7 @@ ip_printer(const _var_arg t)
 		{
 			std::cout << std::to_string(byte[i]);
 			if (i>0)
-				cout << ".";
+				std::cout << ".";
 		}
 	}
 }
